@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,38 +27,39 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            flex-wrap: wrap;
         }
         header img {
             height: 80px;
             width: auto;
         }
         header h1 {
-            font-size: 28px;
+            font-size: 24px;
             margin: 0;
         }
-        .hero {
-            background-image: linear-gradient(rgba(0, 43, 91, 0.5), rgba(0, 43, 91, 0.5)), url('hero_image.png');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            height: 750px; /* Domyślna wysokość na desktopie */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-top: 120px;
-        }
+       .hero {
+    		background-image: linear-gradient(rgba(0, 43, 91, 0.5), rgba(0, 43, 91, 0.5)), url('hero_image.png');
+    		background-size: cover;
+    		background-position: center;
+    		color: white;
+    		height: 600px;
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    		align-items: center;
+    		text-align: center;
+    		margin-top: 80px;
+    		background-attachment: fixed;
+         }
         .hero h2 {
-            font-size: 40px;
+            font-size: 28px;
             margin-bottom: 20px;
         }
         .hero p {
-            max-width: 80%;
+            max-width: 600px;
             margin-top: 20px;
             line-height: 1.5;
-            font-size: 20px;
+            font-size: 18px;
+            padding: 0 20px;
         }
         .container {
             width: 100%;
@@ -95,6 +96,7 @@
             text-align: center;
             box-shadow: 0 6px 12px rgba(0, 43, 91, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
         }
         .triangle .box:hover {
             transform: translateY(-5px);
@@ -151,36 +153,29 @@
             margin-top: 40px;
         }
 
-        /* Responsywność dla urządzeń mobilnych */
+        /* Responsive Design for Mobile */
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
                 padding: 20px;
                 text-align: center;
             }
+
             header h1 {
                 font-size: 20px;
             }
 
             .hero {
-                height: 450px; /* Zmniejszona wysokość w wersji mobilnej */
+                height: 300px;
+                padding: 20px;
             }
 
             .hero h2 {
-                font-size: 28px;
+                font-size: 24px;
             }
 
             .hero p {
                 font-size: 16px;
-                max-width: 90%;
-            }
-
-            .container {
-                padding: 0px;
-            }
-
-            .section h2 {
-                font-size: 28px;
             }
 
             .triangle .box {
@@ -188,13 +183,18 @@
                 margin-bottom: 20px;
             }
 
-            .divider {
-                margin: 20px 0;
+            .section h2 {
+                font-size: 28px;
+            }
+
+            .triangle {
+                flex-direction: column;
+                align-items: center;
             }
 
             form {
                 width: 100%;
-                padding: 0 10px;
+                padding: 0 20px;
             }
 
             form input, form textarea {
@@ -202,11 +202,11 @@
             }
 
             footer {
+                padding: 15px;
                 font-size: 14px;
             }
         }
 
-        /* Jeszcze mniejsze ekrany (smartfony) */
         @media (max-width: 480px) {
             .hero {
                 height: 250px;
@@ -218,10 +218,7 @@
 
             .hero p {
                 font-size: 14px;
-            }
-
-            .section h2 {
-                font-size: 24px;
+                padding: 0 15px;
             }
         }
     </style>
