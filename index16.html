@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Consulting MENA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F4F4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #002B5B;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        header img {
+            height: 60px;
+            width: auto;
+        }
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 43, 91, 0.5), rgba(0, 43, 91, 0.5)), url('hero_image.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            max-width: 600px;
+            margin-top: 20px;
+            line-height: 1.5;
+            font-size: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .divider {
+            height: 1px;
+            background-color: #ccc;
+            margin: 40px 0;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #002B5B;
+        }
+        .triangle {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .triangle .box {
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 25px;
+            width: 32%;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 43, 91, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .triangle .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 43, 91, 0.3);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+        form textarea {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+        form input:focus, form textarea:focus {
+            border-color: #002B5B;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 43, 91, 0.2);
+        }
+        form button {
+            background-color: #002B5B;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background-color: #003d7a;
+            transform: scale(1.05);
+        }
+        #contact p {
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto 40px auto;
+            font-size: 18px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002B5B;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="MENA Liaison Consulting Logo">
+        <h1>MENA Liaison Consulting</h1>
+    </header>
+
+    <div class="hero">
+        <h2>Bridging Cultures, Building Success</h2>
+        <p>At MENA Liaison Consulting, we specialize in providing bespoke advisory services that empower businesses to thrive in the complex yet rewarding markets of the Middle East and North Africa. We combine deep regional expertise with a global perspective to deliver actionable insights and tangible results.</p>
+    </div>
+
+    <div class="container">
+        <div class="section" id="about">
+            <h2>About</h2>
+            <div class="triangle">
+                <div class="box">
+                    <h3>Oil Industry Experience</h3>
+                    <p>I started my career in the oil industry, managing multicultural teams and overseeing HR and PR for Geofizyka Kraków SA, representing the company at international expos.</p>
+                </div>
+                <div class="box">
+                    <h3>Entrepreneurship</h3>
+                    <p>As the Founder & CEO of the Centre for Mediterranean Languages - Sensapolis, I grew the business to serve over 600 students annually, leading a team of 20 instructors.</p>
+                </div>
+                <div class="box">
+                    <h3>Current Expertise</h3>
+                    <p>Today, my expertise spans commodities trading (with a focus on Middle Eastern oil markets), AI solutions, and automotive sector commerce, helping clients expand internationally.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="services">
+            <h2>Services</h2>
+            <div class="triangle">
+                <div class="box">
+                    <h3>Market Entry Strategy</h3>
+                    <p>Assisting businesses in identifying the right entry strategies, conducting market analysis, assessing risks, and crafting tailored strategies to ensure your success in the region.</p>
+                </div>
+                <div class="box">
+                    <h3>Cultural Management</h3>
+                    <p>Guiding your organization through the cultural nuances of doing business in the MENA region, ensuring smooth collaboration and successful relationship-building.</p>
+                </div>
+                <div class="box">
+                    <h3>Business Development</h3>
+                    <p>Expertise in identifying growth opportunities, forming partnerships, and guiding your business through strategic planning helps you expand effectively in the MENA market.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to us to discover how we can assist you in achieving success in the MENA region.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p style="text-align: center; margin-top: 15px;">Phone: +48 500 334 555</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MENA Liaison Consulting</p>
+    </footer>
+</body>
+</html>
